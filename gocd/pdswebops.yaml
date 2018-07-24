@@ -4,7 +4,7 @@ pipelines:
     label_template: "${COUNT}"
     materials:
       instance.control-git:
-        git: git@github.com:ukparliament/lambda-instance-control.git
+        git: https://github.com/ukparliament/lambda-instance-control.git
         branch: master
         auto_update: true
     stages:
