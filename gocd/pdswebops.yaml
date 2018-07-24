@@ -1,6 +1,6 @@
 pipelines:
   webops.importers:
-    group: webops
+    group: lambdas
     label_template: "${COUNT}"
     materials:
       webops.importers-git:
