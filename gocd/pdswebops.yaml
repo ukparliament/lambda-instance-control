@@ -5,7 +5,7 @@ pipelines:
     materials:
       webops.importers-git:
         git: git@github.com:ukparliament/lambda-instance-control.git
-        branch: development
+        branch: master
         auto_update: true
     stages:
       - deploy:
