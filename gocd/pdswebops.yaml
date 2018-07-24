@@ -1,9 +1,9 @@
 pipelines:
-  webops.importers:
+  instance.control:
     group: lambdas
     label_template: "${COUNT}"
     materials:
-      webops.importers-git:
+      instance.control-git:
         git: git@github.com:ukparliament/lambda-instance-control.git
         branch: master
         auto_update: true
