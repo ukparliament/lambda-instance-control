@@ -21,4 +21,4 @@ pipelines:
 environments:
   Web.DEVCI:
     pipelines:
-      - instance-control
+      - lambda.instance-control
