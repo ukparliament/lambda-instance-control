@@ -9,7 +9,7 @@ CREDSTASH_KEY = $(shell \
 )
 
 .venv:
-	python3 -m virtualenv -p python3 .venv
+	virtualenv -p python3 .venv
 	.venv/bin/pip install -r ./src/requirements.txt
 
 node_modules/serverless:
@@ -35,8 +35,3 @@ deploy: build-tools
 		--account-alias $(ACCOUNT_ALIAS) \
 		--credstash-key $(CREDSTASH_KEY)
 
-src/test-requirements.txt: .venv
-	.venv/bin/pip install -r src/test-requirements.txt
-
-test: src/test-requirements.txt
-	bash -c "source .venv/bin/activate && cd src && pytest tests"

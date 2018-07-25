@@ -50,8 +50,7 @@ package:
   include:
     - "*.py"
   exclude:
-    - requirements.txt
-    - test-requirements.txt
+    - requirements.txt 
     - node_modules/**
     - tests/**
 

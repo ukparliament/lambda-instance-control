@@ -8,15 +8,6 @@ pipelines:
         branch: master
         auto_update: true
     stages:
-      - test:
-          jobs:
-            build:
-              tasks:
-                - exec:
-                    run_if: passed
-                    command: make
-                    arguments:
-                      - test
       - deploy:
           jobs:
             deploy:
