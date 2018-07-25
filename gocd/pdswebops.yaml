@@ -1,9 +1,9 @@
 pipelines:
-  instance.control:
-    group: lambdas
+  lambda.instance-control:
+    group: lambda
     label_template: "${COUNT}"
     materials:
-      instance.control-git:
+      lambda.instance-control:
         git: https://github.com/ukparliament/lambda-instance-control.git
         branch: master
         auto_update: true
@@ -21,4 +21,4 @@ pipelines:
 environments:
   Web.DEVCI:
     pipelines:
-      - instance-control
+      - lambda.instance-control
