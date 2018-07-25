@@ -1,0 +1,13 @@
+CF-RAY: 3f8d19eb4a8235ae-LHR
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Fri, 09 Mar 2018 11:11:31 GMT
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Req-Limit-Long: Remaining: 18700864 Time until reset: 424222
+Req-Limit-Short: Remaining: 109359 Time until reset: 3086
+Server: cloudflare
+Server-Time: 1520593891
+Transfer-Encoding: chunked
+X-Powered-By: PHP/5.5.9-1ubuntu4.23
